@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ParticiperConfUser">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="762.0" prefWidth="1064.0" styleClass="mainFxmlClass">
+
+         <children>
+            <Accordion layoutX="444.0" layoutY="215.0" prefHeight="313.0" prefWidth="107.0" />
+            <AnchorPane layoutX="21.0" layoutY="72.0" prefHeight="658.0" prefWidth="1066.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="24.0" text="S'inscrire à la Conférence" textFill="#18305e">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="46.0" layoutY="76.0" prefHeight="585.0" prefWidth="936.0" style="-fx-background-color: rgba(17, 24, 39, 1); -fx-background-radius: 15px;">
+                     <children>
+                        <Button id="sign" layoutX="374.0" layoutY="504.0" mnemonicParsing="false" onAction="#signup" prefHeight="47.0" prefWidth="136.0" style="-fx-content-display: block; -fx-background-color: #a78bfa; -fx-padding: 0.75rem; -fx-text-alignment: center; -fx-border-radius: 0.375rem;" text="Submit" textFill="#111827">
+                           <font>
+                              <Font name="Bell MT Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Label id="label" layoutX="295.0" layoutY="402.0" text="Mode de paiement" textFill="#9ca3af">
+                           <font>
+                              <Font name="Candara" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField id="input" fx:id="institution_inscri" layoutX="295.0" layoutY="349.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-text-fill: white;" />
+                        <Label id="label" layoutX="297.0" layoutY="317.0" text="Institution" textFill="#9ca3af">
+                           <font>
+                              <Font name="Candara" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField id="input" fx:id="nom_inscri" layoutX="297.0" layoutY="168.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-text-fill: white;" />
+                        <TextField id="input" fx:id="email_inscri" layoutX="297.0" layoutY="262.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-text-fill: white;" />
+                        <Label id="label" layoutX="295.0" layoutY="226.0" text="Email" textFill="#9ca3af">
+                           <font>
+                              <Font name="Candara" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label id="label" layoutX="297.0" layoutY="126.0" text="Nom" textFill="#9ca3af">
+                           <font>
+                              <Font name="Candara" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="81.0" layoutY="17.0" text="Date : " textFill="#fcfcfc">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="81.0" layoutY="52.0" text="Lieu :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="81.0" layoutY="89.0" text="Frais d'inscription :" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dateConf" layoutX="155.0" layoutY="20.0" text="Label" textFill="#f5f3f3">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lieuConf" layoutX="155.0" layoutY="53.0" text="Label" textFill="#f8f4f4">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fraisConf" layoutX="245.0" layoutY="92.0" text="Label" textFill="#f5f0f0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="paiement_inscri" layoutX="294.0" layoutY="442.0" prefHeight="31.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-background-color: #111827; -fx-border-style: bold; -fx-border-width: 2px; -fx-border-color: #374151; -fx-text-fill: white;" />
+                     </children>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="880.0" layoutY="18.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="124.0" style="-fx-border-color: #a78bfa; -fx-background-color: #18305e; -fx-border-radius: 4px;" text="Logout" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="-11.0" layoutY="-7.0" prefHeight="77.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="13.0" prefHeight="36.0" prefWidth="137.0" style="-fx-background-color: black;" text="      SciConfManager " textFill="WHITE">
+                     <font>
+                        <Font name="Candara Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="51.0" text="gestion de conférences">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutX="195.0" layoutY="9.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #18305e;" text="&lt;--" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="1036.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user (5).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nomUserProfile" layoutX="1035.0" layoutY="55.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AppelPartComController">
+
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="726.0" prefWidth="1104.0" styleClass="right-form">
+               <children>
+                  <Label fx:id="conf_name" layoutX="48.0" layoutY="64.0" text="Your" textFill="#18305e">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="membre_name" layoutX="48.0" layoutY="117.0" text="Membre du comité scientifique" textFill="#00000069" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="34.0" layoutY="231.0" stroke="#60008626" strokeType="INSIDE" strokeWidth="3.0" styleClass="mid-menu" width="258.0" />
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="47.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/printer.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="36.0" layoutX="158.0" layoutY="484.0" startX="-30.0" stroke="#00000049" />
+                  <Button layoutX="73.0" layoutY="231.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="Appel à participation" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="34.0" layoutY="169.0" stroke="#00000026" strokeType="INSIDE" styleClass="mid-menu" width="258.0" />
+                  <Button layoutX="73.0" layoutY="169.0" mnemonicParsing="false" onAction="#conf_info" prefHeight="44.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="Votre conférence" />
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="47.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/google-forms.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="34.0" layoutY="292.0" stroke="#00000026" strokeType="INSIDE" styleClass="mid-menu" width="258.0" />
+                  <Button layoutX="73.0" layoutY="292.0" mnemonicParsing="false" onAction="#conferencier_inv" prefHeight="44.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="Conférenciers Invités" />
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="47.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/speaker.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="34.0" layoutY="350.0" stroke="#00000026" strokeType="INSIDE" styleClass="mid-menu" width="258.0" />
+                  <Button layoutX="73.0" layoutY="350.0" mnemonicParsing="false" onAction="#eva_article" prefHeight="44.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="Evaluation des articles" />
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="47.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/article.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="44.0" layoutX="34.0" layoutY="413.0" stroke="#00000026" strokeType="INSIDE" styleClass="mid-menu" width="258.0" />
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="47.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/statistics.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="73.0" layoutY="413.0" mnemonicParsing="false" onAction="#stat" prefHeight="44.0" prefWidth="218.0" style="-fx-background-color: transparent;" text="Stat et Info Générales" />
+                  <Button layoutX="13.0" layoutY="12.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #18305e;" text="&lt;--" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="326.0" layoutY="54.0" prefHeight="676.0" prefWidth="768.0" style="-fx-border-color: #00000026; -fx-background-color: #f3f4f68b;">
+         <styleClass>
+            <String fx:value="white-bor-anchor" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <children>
+            <Button layoutX="316.0" layoutY="590.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="45.0" prefWidth="150.0" style="-fx-border-color: #a78bfa; -fx-background-color: #18305e; -fx-border-radius: 4px;" text="         Imprimer" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="332.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/printer (1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="214.0" text="Date de Fin">
+               <font>
+                  <Font name="Candara Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="date_fin" layoutX="157.0" layoutY="209.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="375.0" layoutY="161.0" text="Institution Organisatrice">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="215.0" text="Date de Début">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="109.0" text="Titre">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="328.0" text="Lieu">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="396.0" text="Thématiques Adressées">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="454.0" text="Date Limite de Soumission d’Articles">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="375.0" layoutY="502.0" text="Date Limite des Inscriptions">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="372.0" layoutY="552.0" text=" Frais d’Inscription">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titre_tf" layoutX="424.0" layoutY="104.0" prefHeight="31.0" prefWidth="258.0" style="-fx-background-radius: 5px;" />
+      <TextField fx:id="institution_tf" layoutX="566.0" layoutY="157.0" prefHeight="31.0" prefWidth="258.0" style="-fx-background-radius: 5px;" />
+      <TextField fx:id="date_deb" layoutX="485.0" layoutY="210.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+      <TextField fx:id="lieu_tf" layoutX="424.0" layoutY="318.0" prefHeight="44.0" prefWidth="258.0" style="-fx-background-radius: 5px;" />
+      <TextField fx:id="thematique_tf" layoutX="558.0" layoutY="391.0" prefHeight="31.0" prefWidth="386.0" style="-fx-background-radius: 5px;" />
+      <TextField fx:id="date_article" layoutX="658.0" layoutY="449.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+      <TextField fx:id="date_inscri" layoutX="658.0" layoutY="497.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+      <TextField fx:id="frais_tf" layoutX="658.0" layoutY="547.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+   </children>
+</AnchorPane>

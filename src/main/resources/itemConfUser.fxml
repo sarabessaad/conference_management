@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="889.0" prefHeight="231.0" prefWidth="889.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ItemConfUser">
+   <children>
+      <ImageView fx:id="photoConf" fitHeight="145.0" fitWidth="244.0" layoutX="169.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="titreConf" layoutX="176.0" layoutY="182.0" prefHeight="30.0" prefWidth="346.0" text="Label">
+         <font>
+            <Font name="Candara Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="635.0" layoutY="18.0" mnemonicParsing="false" onAction="#details_conference" prefHeight="31.0" prefWidth="244.0" style="-fx-border-color: transparent; -fx-background-radius: 3px; -fx-background-color: earl;" text="&gt; Détails de la Conférence" textFill="#6b50bc">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="643.0" layoutY="153.0" mnemonicParsing="false" onAction="#participer_conference" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: earl; -fx-border-color: transparent;" text="&gt; Participer à la Conférence" textFill="#6b50bc">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="626.0" layoutY="63.0" mnemonicParsing="false" onAction="#appel_participation" prefHeight="31.0" prefWidth="244.0" style="-fx-border-color: transparent; -fx-background-color: earl;" text="&gt; Appel à Participation" textFill="#6b50bc">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="626.0" layoutY="108.0" mnemonicParsing="false" onAction="#conference_invite" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: earl; -fx-border-color: transparent;" text="&gt; Conférenciers Invités" textFill="#6b50bc">
+         <font>
+            <Font name="Candara" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="626.0" layoutY="194.0" mnemonicParsing="false" onAction="#soumettre_article" prefHeight="31.0" prefWidth="244.0" style="-fx-background-color: earl; -fx-border-color: transparent;" text="&gt; Soumettre un Article" textFill="#6b50bc">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

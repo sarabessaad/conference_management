@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SuiviArticleUser">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="762.0" prefWidth="1064.0" styleClass="mainFxmlClass">
+
+         <children>
+            <AnchorPane layoutX="21.0" layoutY="72.0" prefHeight="658.0" prefWidth="1066.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="24.0" text="Mes Articles" textFill="#18305e">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="10.0" layoutY="76.0" prefHeight="600.0" prefWidth="1006.0">
+                     <content>
+                        <GridPane fx:id="gridPane" prefHeight="0.0" prefWidth="0.0">
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="859.0" layoutY="16.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="124.0" style="-fx-border-color: #a78bfa; -fx-background-color: #18305e; -fx-border-radius: 4px;" text="Logout" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="-11.0" layoutY="-7.0" prefHeight="77.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="13.0" prefHeight="36.0" prefWidth="137.0" style="-fx-background-color: black;" text="      SciConfManager " textFill="WHITE">
+                     <font>
+                        <Font name="Candara Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="51.0" text="gestion de conférences">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutX="195.0" layoutY="7.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #18305e;" text="&lt;--" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="1022.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/images/user (5).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nomUserProfile" layoutX="1021.0" layoutY="58.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AppelParticipationUser">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="762.0" prefWidth="1088.0" styleClass="mainFxmlClass">
+
+         <children>
+            <Accordion layoutX="444.0" layoutY="215.0" prefHeight="313.0" prefWidth="107.0" />
+            <AnchorPane layoutX="8.0" layoutY="72.0" prefHeight="676.0" prefWidth="1050.0">
+               <children>
+                  <Label layoutX="15.0" layoutY="8.0" text="Appel à Participation" textFill="#18305e">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="131.0" layoutY="50.0" prefHeight="616.0" prefWidth="790.0" style="-fx-border-color: #00000026; -fx-background-color: #f3f4f68b;">
+                     <styleClass>
+                        <String fx:value="white-bor-anchor" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="142.0" layoutY="22.0" text="Titre">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="titreConf" layoutX="189.0" layoutY="17.0" prefHeight="31.0" prefWidth="478.0" style="-fx-background-radius: 5px;" />
+                        <Label layoutX="142.0" layoutY="178.0" text="Date de Fin">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="date_fin" layoutX="252.0" layoutY="173.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+                        <Label layoutX="142.0" layoutY="77.0" text="Institution Organisatrice">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="institutionOrg" layoutX="333.0" layoutY="73.0" prefHeight="31.0" prefWidth="337.0" style="-fx-background-radius: 5px;" />
+                        <Label layoutX="142.0" layoutY="130.0" text="Date de Début">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="date_debut" layoutX="252.0" layoutY="125.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+                        <Label layoutX="145.0" layoutY="241.0" text="Lieu">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="lieuConf" layoutX="197.0" layoutY="236.0" prefHeight="45.0" prefWidth="258.0" style="-fx-background-radius: 5px;" />
+                        <Button layoutX="349.0" layoutY="552.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="45.0" prefWidth="150.0" style="-fx-border-color: #a78bfa; -fx-background-color: #18305e; -fx-border-radius: 4px;" text="         Imprimer" textFill="#fcfcfc">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="369.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/printer (1).png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="140.0" layoutY="367.0" text="Date Limite de Soumission d’Articles">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="date_limite_article" layoutX="423.0" layoutY="362.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+                        <Label layoutX="140.0" layoutY="418.0" text="Date Limite des Inscriptions">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="137.0" layoutY="464.0" text=" Frais d’Inscription">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="date_limite_inscri" layoutX="423.0" layoutY="413.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+                        <TextField fx:id="frais_inscri" layoutX="423.0" layoutY="459.0" prefHeight="31.0" prefWidth="218.0" style="-fx-background-radius: 5px;" />
+                        <Label layoutX="141.0" layoutY="317.0" text="Thématiques Adressées">
+                           <font>
+                              <Font name="Candara Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="thematique" layoutX="324.0" layoutY="312.0" prefHeight="31.0" prefWidth="386.0" style="-fx-background-radius: 5px;" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button layoutX="877.0" layoutY="13.0" mnemonicParsing="false" onAction="#logout" prefHeight="45.0" prefWidth="124.0" style="-fx-border-color: #a78bfa; -fx-background-color: #18305e; -fx-border-radius: 4px;" text="Logout" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="-11.0" layoutY="-7.0" prefHeight="77.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="13.0" prefHeight="36.0" prefWidth="137.0" style="-fx-background-color: black;" text="      SciConfManager " textFill="WHITE">
+                     <font>
+                        <Font name="Candara Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="51.0" text="gestion de conférences">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutX="195.0" layoutY="9.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #18305e;" text="&lt;--" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="1033.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/user (5).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nomUserProfile" layoutX="1033.0" layoutY="55.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

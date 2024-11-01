@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Login">
+
+    <children>
+        <AnchorPane id="form-container" fx:id="formcontainer" layoutX="14.0" layoutY="10.0" prefHeight="756.0" prefWidth="913.0" style="-fx-background-color: white; -fx-border-radius: 0.75rem; -fx-padding: 2rem;" styleClass="mainFxmlClass">
+
+            <children>
+                <AnchorPane layoutX="201.0" layoutY="28.0" prefHeight="700.0" prefWidth="512.0" style="-fx-background-color: rgba(17, 24, 39, 1); -fx-background-radius: 15px;">
+                    <children>
+                        <Button id="sign" layoutX="188.0" layoutY="577.0" mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="136.0" style="-fx-content-display: block; -fx-background-color: #a78bfa; -fx-padding: 0.75rem; -fx-text-alignment: center; -fx-border-radius: 0.375rem;" text="Login" textFill="#111827">
+                            <font>
+                                <Font name="Bell MT Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <Label id="label" fx:id="label1" layoutX="228.0" layoutY="29.0" text="Login" textFill="#9ca3af">
+                            <font>
+                                <Font name="Candara Bold" size="24.0" />
+                            </font>
+                        </Label>
+                  <ChoiceBox fx:id="role" layoutX="227.0" layoutY="143.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #111827; -fx-border-width: 2px; -fx-border-color: #374151; -fx-text-fill: white;" />
+                  <Label id="label" fx:id="label2" layoutX="107.0" layoutY="147.0" text="Login as" textFill="#9ca3af">
+                     <font>
+                        <Font name="Candara" size="18.0" />
+                     </font>
+                  </Label>
+                    </children>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                </AnchorPane>
+                <TextField id="input" fx:id="email_tf" layoutX="310.0" layoutY="306.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-text-fill: white;" />
+                <Label id="label" fx:id="label" layoutX="308.0" layoutY="270.0" text="Email" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara" size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="input" fx:id="mdp_tf" layoutX="310.0" layoutY="442.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-padding: 0.75rem 1rem; -fx-text-fill: white;" />
+                <Label id="label" fx:id="label21" layoutX="310.0" layoutY="400.0" text="Mot de passe" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

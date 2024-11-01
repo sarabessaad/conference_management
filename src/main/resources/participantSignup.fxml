@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="756.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ParticipantSignup">
+
+    <children>
+        <AnchorPane layoutX="201.0" layoutY="28.0" prefHeight="700.0" prefWidth="512.0" style="-fx-background-color: rgba(17, 24, 39, 1); -fx-background-radius: 15px;">
+            <children>
+                <Button id="sign" layoutX="188.0" layoutY="619.0" mnemonicParsing="false" onAction="#signup" prefHeight="47.0" prefWidth="136.0" style="-fx-content-display: block; -fx-background-color: #a78bfa; -fx-padding: 0.75rem; -fx-text-alignment: center; -fx-border-radius: 0.375rem;" text="Sign up" textFill="#111827">
+                    <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="56.0" fitWidth="49.0" layoutX="20.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/user (4).png" />
+                    </image>
+                </ImageView>
+              <TextField id="input" fx:id="institution_tf" layoutX="98.0" layoutY="502.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-padding: 0.75rem;" />
+              <Label id="label" fx:id="label" layoutX="98.0" layoutY="461.0" text="Mot de passe" textFill="#9ca3af">
+                  <font>
+                      <Font name="Candara" size="18.0" />
+                  </font>
+              </Label>
+            <TextField id="input" fx:id="mdp_tf" layoutX="99.0" layoutY="407.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827;" />
+            <Label id="label" fx:id="label2" layoutX="103.0" layoutY="376.0" text="Institution" textFill="#9ca3af">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Label>
+              <TextField id="input" fx:id="nom_tf" layoutX="100.0" layoutY="228.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-padding: 0.75rem 1rem;" />
+              <TextField id="input" fx:id="email_tf" layoutX="100.0" layoutY="330.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827;" />
+              <Label id="label" fx:id="label3" layoutX="98.0" layoutY="294.0" text="Email" textFill="#9ca3af">
+                  <font>
+                      <Font name="Candara" size="18.0" />
+                  </font>
+              </Label>
+              <Label id="label" fx:id="label0" layoutX="100.0" layoutY="186.0" text="Nom" textFill="#9ca3af">
+                  <font>
+                      <Font name="Candara" size="18.0" />
+                  </font>
+              </Label>
+            <Label layoutX="12.0" layoutY="84.0" text="Participant" textFill="WHITE" />
+              <Label id="label" fx:id="label1" layoutX="228.0" layoutY="54.0" text="Signup" textFill="#9ca3af">
+                  <font>
+                      <Font name="Candara Bold" size="24.0" />
+                  </font>
+              </Label>
+            </children>
+            <effect>
+                <Bloom />
+            </effect>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminSignup">
+
+    <children>
+        <AnchorPane id="form-container" fx:id="formcontainer" layoutX="4.0" prefHeight="756.0" prefWidth="913.0" style="-fx-background-color: white; -fx-border-radius: 0.75rem; -fx-padding: 2rem;" styleClass="mainFxmlClass">
+            <children>
+                <AnchorPane layoutX="201.0" layoutY="28.0" prefHeight="700.0" prefWidth="512.0" style="-fx-background-color: rgba(17, 24, 39, 1); -fx-background-radius: 15px;">
+                    <children>
+                        <Button id="sign" layoutX="188.0" layoutY="619.0" mnemonicParsing="false" onAction="#signup" prefHeight="47.0" prefWidth="136.0" style="-fx-content-display: block; -fx-background-color: #a78bfa; -fx-padding: 0.75rem; -fx-text-alignment: center; -fx-border-radius: 0.375rem;" text="Sign up" textFill="#111827">
+                            <font>
+                                <Font name="Bell MT Bold" size="18.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="63.0" fitWidth="50.0" layoutX="21.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/images/admin.png" />
+                            </image>
+                        </ImageView>
+                        <Label id="label" layoutX="22.0" layoutY="80.0" prefHeight="22.0" prefWidth="59.0" text="Admin" textFill="#9ca3af">
+                            <font>
+                                <Font name="Candara Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                </AnchorPane>
+                <Label id="label" layoutX="310.0" layoutY="334.0" text="Institution" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara" size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="input" fx:id="nom_tf" layoutX="310.0" layoutY="179.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-padding: 0.75rem 1rem;" />
+                <TextField id="input" fx:id="email_tf" layoutX="310.0" layoutY="270.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827;" />
+                <TextField id="input" fx:id="institution_tf" layoutX="309.0" layoutY="368.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-padding: 0.75rem;" />
+                <Label id="label" layoutX="308.0" layoutY="234.0" text="Email" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara" size="18.0" />
+                    </font>
+                </Label>
+                <Label id="label" layoutX="310.0" layoutY="137.0" text="Nom" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara" size="18.0" />
+                    </font>
+                </Label>
+                <Label id="label" layoutX="411.0" layoutY="58.0" text="Sign Up" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara Bold" size="24.0" />
+                    </font>
+                </Label>
+                <TextField id="input" fx:id="username_tf" layoutX="310.0" layoutY="475.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-padding: 0.75rem 1rem;" />
+                <Label id="label" layoutX="310.0" layoutY="433.0" text="Username" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara" size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="input" fx:id="mdp_tf" layoutX="310.0" layoutY="573.0" prefHeight="35.0" prefWidth="315.0" style="-fx-border-radius: 0.375rem; -fx-border-width: 2px; -fx-border-style: solid; -fx-border-color: #374151; -fx-background-color: #111827; -fx-padding: 0.75rem 1rem;" />
+                <Label id="label" layoutX="310.0" layoutY="531.0" text="Mot de passe" textFill="#9ca3af">
+                    <font>
+                        <Font name="Candara" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>
